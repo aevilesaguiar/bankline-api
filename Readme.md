@@ -23,6 +23,8 @@ de inversão de controle e injeção de dependencias;
 - Maven: sistema para gestão de dependencias e distribuição de uma aplicação
 - Heroku: Plataforma para hospedagem de aplicações com fácil integração com Github;
 - REST: Arquitetura para transferencia de dados representativos com JSON
+- POSTMAN:ompartilhar, testar e documentar APIs. Isso é feito, permitindo aos usuários criar e salvar solicitações 
+HTTP e HTTPs simples e complexas, bem como ler suas respostas.
 
 ## Projeto
 
@@ -68,6 +70,8 @@ funcionalidades em cima do spring framework ) foca na configuração automática
 São dependencias que agrupam outras dependecias com um propósito em comum. Dessa forma, somente uma configuração é realizada 
 no seu gerenciador de dependências no caso o Maven. Mas por baixo temos o spring framework gerenciando.
 
+
+
 **Prinicpais Startes para dar andamento ao projeto**
 
 - spring-boot-starter-*
@@ -83,6 +87,10 @@ no seu gerenciador de dependências no caso o Maven. Mas por baixo temos o sprin
 
 
 
+## Obervação
+
+- Usando a convenção do web Spring MVC , nós temos a camada de Controllers, onde vou disponibilizar as rotas 
+ para que eu possa disponibilizar os nossos recursos e as pessoas interagirem na nossa aplicação
 
 
 
