@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 
@@ -12,10 +13,20 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "movimentacao")
 public class Movimentacao {
+
+    @Id
+    @GeneratedValue
     private Integer id;
+
+    @Column
     private LocalDateTime date;
+    @Column
     private String descricao;
+
+    @Column
     private Double valor;
 
     private MovimentacaoTipo tipo;
