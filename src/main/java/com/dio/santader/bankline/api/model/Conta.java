@@ -11,14 +11,13 @@ import javax.persistence.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Embeddable // @Embeddable é usada para especificar tipos incorporáveis. Como os tipos básicos, os tipos incorporáveis não tem identidade, sendo gerenciados por sua entidade proprietária.
 @Table(name = "conta")
 public class Conta {
 
-    @Id
-    @GeneratedValue
+    @Column(name = "conta_numero")
     private Long numero;
 
-    @Column(name = "saldo")
+    @Column(name = "conta_saldo")
     private Double saldo;
 }

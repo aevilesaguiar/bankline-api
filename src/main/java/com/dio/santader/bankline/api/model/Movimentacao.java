@@ -18,17 +18,19 @@ import java.time.LocalDateTime;
 public class Movimentacao {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column
+    @Column(name = "data_hora")
     private LocalDateTime date;
+
     @Column
     private String descricao;
 
     @Column
     private Double valor;
 
+    @Enumerated(EnumType.STRING)//dizemos que vamos salvar o proprio valor literal ou DESPESA OU RECEITA
     private MovimentacaoTipo tipo;
 
 }

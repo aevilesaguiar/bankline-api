@@ -13,19 +13,19 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "correntista")
+@Table(name = "tab_correntista")
 public class Correntista {
 
-    @Id
-    @GeneratedValue
+    @Id //jpa essa coluna é a chave primária(identificador exclusivo do registro)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //jpa essa classe correntista tem uma chave primaria e você vai gerenciar ela através do postgres
     private Integer id;
-    @Column(name = "cpf")
+    @Column(name = "cpf", length = 20)
     private String cpf;
 
-    @Column(name = "nome")
+    @Column(name = "nome", length = 60)
     private String nome;
 
-    @Column(name = "conta")
+    @Embedded //@Embedded é usada para especificar que um determinado atributo de entidade representa um tipo incorporável.As informações que estiverem na classe Conta estarão na mesma tabela que a principal
     private Conta conta;
 
 
