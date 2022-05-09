@@ -21,7 +21,7 @@ de inversão de controle e injeção de dependencias;
 - Swagger: ferramenta de documentação de APIS e Webservices
 - Github: repositório e gerenciador de versionamento de código fonte;
 - Maven: sistema para gestão de dependencias e distribuição de uma aplicação
-- Heroku: Plataforma para hospedagem de aplicações com fácil integração com Github;
+- Heroku: Plataforma para hospedagem de aplicações com fácil integração com Github(tem forte integração com o postgres)
 - REST: Arquitetura para transferencia de dados representativos com JSON
 - POSTMAN:ompartilhar, testar e documentar APIs. Isso é feito, permitindo aos usuários criar e salvar solicitações 
 HTTP e HTTPs simples e complexas, bem como ler suas respostas.
