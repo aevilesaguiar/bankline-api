@@ -18,7 +18,7 @@ relacional;
 - Spring Framework: plataforma para desenvolvimento de aplicações Java baseado nos padrões de projeto
 de inversão de controle e injeção de dependencias;
 - Postgres: Banco de dados relacional
-- Swagger: ferramenta de documentação de APIS e Webservices
+- Swagger: ferramenta de documentação de APIS e Webservices (http://localhost:8080/swagger-ui/index.html#/)
 - Github: repositório e gerenciador de versionamento de código fonte;
 - Maven: sistema para gestão de dependencias e distribuição de uma aplicação
 - Heroku: Plataforma para hospedagem de aplicações com fácil integração com Github(tem forte integração com o postgres)
